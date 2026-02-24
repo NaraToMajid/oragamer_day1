@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay">
+        <h1 id="title">THE FOLLOWER</h1>
+        <p>Mereka ada di mana-mana dalam gelap. Matikan senter untuk menghemat waktu, tapi bersiaplah...</p>
+        <p>[WASD] Jalan | [SHIFT] Lari | [Mouse] Arah Senter | [G] Saklar</p>
+        <button onclick="startGame()">MASUK KE KEGELAPAN</button>
+    </div>
+
+    <div id="game-ui">
+        <div>Follow: <span id="score-text" class="blood-text">0</span></div>
+        <div id="stamina-container"><div id="stamina-bar"></div></div>
+    </div>
+    <div id="info">Senter [G] | Waktu: <span id="timer-text">30</span>s</div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
